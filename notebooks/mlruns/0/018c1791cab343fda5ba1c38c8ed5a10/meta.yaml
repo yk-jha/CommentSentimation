@@ -1,0 +1,14 @@
+artifact_uri: file:///Users/uyashjha1710/Desktop/CommentSentimation/mlruns/0/018c1791cab343fda5ba1c38c8ed5a10/artifacts
+end_time: 1750830492799
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 018c1791cab343fda5ba1c38c8ed5a10
+run_name: TF-IDF_(1, 2)_RandomForest
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1750830489106
+status: 3
+tags: []
+user_id: uyashjha1710

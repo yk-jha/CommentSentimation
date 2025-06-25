@@ -1,0 +1,10 @@
+artifact_location: file:///Users/uyashjha1710/Desktop/CommentSentimation/mlruns/0/models/m-1313d69fc7a24c36bea82bbf69d0b268/artifacts
+creation_timestamp: 1750830310692
+experiment_id: '0'
+last_updated_timestamp: 1750830312439
+model_id: m-1313d69fc7a24c36bea82bbf69d0b268
+model_type: null
+name: random_forest_model_BoW_(1, 3)
+source_run_id: 181a57de3bc6403cbf85b316f139f895
+status: 2
+status_message: null

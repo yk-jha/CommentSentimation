@@ -1,0 +1,22 @@
+artifact_path: file:///Users/uyashjha1710/Desktop/CommentSentimation/mlruns/0/models/m-b0bd7867a3444da996569b77235362df/artifacts
+flavors:
+  python_function:
+    env:
+      conda: conda.yaml
+      virtualenv: python_env.yaml
+    loader_module: mlflow.sklearn
+    model_path: model.pkl
+    predict_fn: predict
+    python_version: 3.12.7
+  sklearn:
+    code: null
+    pickled_model: model.pkl
+    serialization_format: cloudpickle
+    sklearn_version: 1.5.1
+mlflow_version: 3.1.0
+model_id: m-b0bd7867a3444da996569b77235362df
+model_size_bytes: 8507871
+model_uuid: m-b0bd7867a3444da996569b77235362df
+prompts: null
+run_id: 27796c13245d456289bf19652db6b7f2
+utc_time_created: '2025-06-25 05:45:05.291807'

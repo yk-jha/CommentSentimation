@@ -1,0 +1,14 @@
+artifact_uri: file:///Users/uyashjha1710/Desktop/CommentSentimation/mlruns/0/181a57de3bc6403cbf85b316f139f895/artifacts
+end_time: 1750830312441
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 181a57de3bc6403cbf85b316f139f895
+run_name: BoW_(1, 3)_RandomForest
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1750830309212
+status: 3
+tags: []
+user_id: uyashjha1710

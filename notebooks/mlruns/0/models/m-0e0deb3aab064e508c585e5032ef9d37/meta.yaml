@@ -1,0 +1,10 @@
+artifact_location: file:///Users/uyashjha1710/Desktop/CommentSentimation/mlruns/0/models/m-0e0deb3aab064e508c585e5032ef9d37/artifacts
+creation_timestamp: 1750830482062
+experiment_id: '0'
+last_updated_timestamp: 1750830483791
+model_id: m-0e0deb3aab064e508c585e5032ef9d37
+model_type: null
+name: random_forest_model_TF-IDF_(1, 1)
+source_run_id: 57d8edb2f87a46f488830cb8cbb93414
+status: 2
+status_message: null
