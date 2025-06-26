@@ -95,7 +95,12 @@ jobs:
          else
           echo "Container 'cnncls' is not running. Skipping stop and remove."
          fi
-        shell: /usr/bin/bash
+        shell: bash {0}
+        env:
+          AWS_DEFAULT_REGION: ${{ secrets.AWS_DEFAULT_REGION }}
+          AWS_REGION: ${{ secrets.AWS_REGION }}
+          AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
+          AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
        
       - name: Run Docker Image to serve users
         run: |
