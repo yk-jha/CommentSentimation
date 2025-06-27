@@ -5,7 +5,7 @@ from flask import Flask, request, jsonify, send_file
 from flask_cors import CORS
 import io
 import matplotlib.pyplot as plt
-from wordcloud import WordCloud
+from wordcloud import WordCloud , STOPWORDS
 import mlflow
 import numpy as np
 import re
@@ -213,10 +213,10 @@ def generate_wordcloud():
         if not comments:
             return jsonify({"error": "No comments provided"}), 400
 
-        # Preprocess comments
-        preprocessed_comments = [preprocess_comment(comment) for comment in comments]
+        # OPTIONAL: if you still have a preprocess_comment() helper, keep it
+        preprocessed_comments = [preprocess_comment(c) for c in comments]
 
-        # Combine all comments into a single string
+        # Combine all comments into one string
         text = ' '.join(preprocessed_comments)
 
         # Generate the word cloud
@@ -225,17 +225,16 @@ def generate_wordcloud():
             height=400,
             background_color='black',
             colormap='Blues',
-            stopwords=set(stopwords.words('english')),
+            stopwords=STOPWORDS,      # ← no external downloads needed
             collocations=False
         ).generate(text)
 
-        # Save the word cloud to a BytesIO object
+        # Return the PNG image
         img_io = io.BytesIO()
         wordcloud.to_image().save(img_io, format='PNG')
         img_io.seek(0)
-
-        # Return the image as a response
         return send_file(img_io, mimetype='image/png')
+
     except Exception as e:
         app.logger.error(f"Error in /generate_wordcloud: {e}")
         return jsonify({"error": f"Word cloud generation failed: {str(e)}"}), 500
