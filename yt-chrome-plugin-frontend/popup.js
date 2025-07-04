@@ -7,7 +7,6 @@ document.addEventListener("DOMContentLoaded", async () => {
   // const API_URL = 'http://localhost:5000/';
   const API_URL = 'http://52.91.58.86:5000/';
 
-  // Get the current tab's URL
   chrome.tabs.query({ active: true, currentWindow: true }, async (tabs) => {
     const url = tabs[0].url;
     const youtubeRegex = /^https:\/\/(?:www\.)?youtube\.com\/watch\?v=([\w-]{11})/;
