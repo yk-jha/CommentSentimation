@@ -1,4 +1,4 @@
-// popup.js
+
 
 document.addEventListener("DOMContentLoaded", async () => {
   const outputDiv = document.getElementById("output");
